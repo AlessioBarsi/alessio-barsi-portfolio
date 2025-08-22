@@ -50,7 +50,7 @@ export default function Home() {
         <Card className="w-full md:w-[60%]" id="projects">
           <CardHeader>
             <CardTitle className="text-4xl">My Projects</CardTitle>
-            <CardDescription>A collection of web applications I've built</CardDescription>
+            <CardDescription>A collection of my web applications</CardDescription>
           </CardHeader>
           <CardContent>
 

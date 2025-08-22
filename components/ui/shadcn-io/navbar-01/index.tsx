@@ -3,10 +3,8 @@
 import * as React from 'react';
 import { useEffect, useState, useRef } from 'react';
 import {
-  NavigationMenu,
-  NavigationMenuItem, NavigationMenuList
+  NavigationMenu, NavigationMenuList
 } from '../../navigation-menu';
-import Link from 'next/link';
 import Contacts from '@/components/Contacts';
 // Utility to concatenate class names
 function cn(...classes: (string | undefined | null | false)[]) {
