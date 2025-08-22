@@ -1,32 +1,56 @@
 'use client';
+import { Badge } from "./ui/badge";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "./ui/carousel";
 import Autoplay from "embla-carousel-autoplay"
+import Link from "next/link";
+
 
 type Parameters = {
     images: string[];
+    description: string;
+    title: string;
     folder: string;
+    technologies: string[];
 }
+const githubUsername = process.env.NEXT_PUBLIC_GITHUB_USERNAME;
 
-export default function ProjectCarousel({ images, folder }: Parameters) {
+export default function ProjectCarousel({ images, folder, title, description, technologies }: Parameters) {
     return (
-        <Carousel
-            plugins={[
-                Autoplay({
-                    delay: 3000,
-                }),
-            ]}>
-            <CarouselContent>
-                {images.map(element => {
-                    return (
-                        <CarouselItem key={element}>
-                            <img className="border rounded-lg" src={`/projects/${folder}/${element}`} alt={element} />
-                        </CarouselItem>
-                    );
-                })}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-        </Carousel>
+        <div>
+            <div className="text-2xl font-bold">{title}</div>
+            <p className="text-muted-foreground">{description}</p>
+            <div className="flex items-start gap-2 my-3">
+                {technologies.map((tech, index) => (
+                    <Badge key={index} variant="default">
+                        {tech}
+                    </Badge>
+                ))}
+            </div>
+            <Carousel
+                plugins={[
+                    Autoplay({
+                        delay: 3500,
+                    }),
+                ]}>
+                <CarouselContent>
+                    {images.map(element => {
+                        return (
+                            <CarouselItem key={element}>
+                                <img className="border rounded-lg w-[70%]" 
+                                src={`/projects/${folder}/${element}`} 
+                                alt={element} 
+                                />
+                            </CarouselItem>
+                        );
+                    })}
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+            </Carousel>
+
+            <Badge className="bg-blue-500 text-white mt-3"><Link href={`https://github.com/${githubUsername}/${folder}`}> View Code</Link></Badge>
+        </div>
+
 
     )
 }
