@@ -1,0 +1,50 @@
+{
+    "about": {
+        "title": "About",
+        "description": "I am a full stack developer with a passion for building web applications, proficient in HTML, CSS, JavaScript, PHP, React and Laravel",
+        "date": "Date of birth",
+        "country": "Country",
+        "italy": "Italy"
+    },
+    "skills": {
+        "title": "Skills",
+        "description": "Programming languages, frameworks, libraries, tools, and platforms I have experience with",
+        "programming": "Programming Languages",
+        "libraries": "Frameworks and Libraries",
+        "tools": "Tools and Platforms",
+        "languages": "Spoken Languages",
+        "italian": "Italian",
+        "italian_language": "Native speaker",
+        "english": "English",
+        "english_language": "Certificato at",
+        "english_certificate": "Certificate number"
+    },
+    "projects": {
+        "title": "My Projects",
+        "description": "A showcase of web applications I have personally developed",
+        "laravel-construction-site-manager": {
+            "description": "Web application for managing construction sites and workers, featuring a React+Vite frontend with Material UI and a Laravel backend."
+        },
+        "next-js-simple-blog-spot": {
+            "description": "Blog application built with Next.js and Prisma, enabling users to create, comment on, and explore posts."
+        },
+        "view_code": "View Repository"
+    },
+    "resume": {
+        "title": "Resume",
+        "pizero": {
+            "1": "Developed both frontend and backend features for management web applications, using PHP for backend logic and JavaScript with Bootstrap for responsive interfaces",
+            "2": "Enhanced an existing React Native application by implementing new features and improvements",
+            "3": "Developed an administrative management interface with Laravel and Vuexy, enabling admin users to upload, manage, and remove content efficiently",
+            "4": "Implemented frontend functionality for an AI-driven web application using Laravel with Livewire and Volt",
+            "5": "Gained experience with Parallel Desk, Slack e ClickUp, collaborating effectively within a team environment"
+        },
+        "its": {
+            "1": "Acquired solid foundations in Python and web development, including HTML, CSS, and JavaScript",
+            "2": "Developed a practical understanding of full-stack application architecture, covering frontend, backend, APIs, and database integration",
+            "3": "Gained hands-on experience with frameworks such as Django, React, and Laravel",
+            "4": "Worked with development and testing tools including Postman, Git and Github",
+            "5": "Built basic knowledge of containerization (Docker), cloud concepts, and Internet of Things (IoT) technologies"
+        }
+    }
+}

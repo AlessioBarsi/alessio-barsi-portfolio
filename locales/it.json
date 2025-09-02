@@ -1,0 +1,50 @@
+{
+    "about": {
+        "title": "Chi Sono",
+        "description": "Sono uno sviluppatore full stack con la passione per la creazione di applicazioni web, competente in HTML, CSS, JavaScript, PHP, React e Laravel",
+        "date": "Data di nascita",
+        "country": "Paese",
+        "italy": "Italia"
+    },
+    "skills": {
+        "title": "Competenze",
+        "description": "Linguaggi, framework, librerie, strumenti e piattaforme con le quali ho esperienze",
+        "programming": "Linguaggi di Programmazione",
+        "libraries": "Framework e Librerie",
+        "tools": "Strumenti e Piattaforme",
+        "languages": "Lingue",
+        "italian": "Italiano",
+        "italian_language": "Madrelingua",
+        "english": "Inglese",
+        "english_language": "Certificato da",
+        "english_certificate": "Numero certificato"
+    },
+    "projects": {
+        "title": "I Miei Progetti",
+        "description": "Una collezione di progetti che ho sviluppato personalmente",
+        "laravel-construction-site-manager": {
+            "description": "Applicazione web per la gestione di cantieri e lavoratori, con frontend React+Vite con Material UI e backend Laravel."
+        },
+        "next-js-simple-blog-spot": {
+            "description": "Applicazione blog sviluppata con Next.js e Prisma, che permette agli utenti di creare, commentare ed esplorare post."
+        },
+        "view_code": "Vedi Repository"
+    },
+    "resume": {
+        "title": "Curriculum",
+        "pizero": {
+            "1": "Sviluppo sia frontend che backend di funzionalità per applicazioni web gestionali, usando PHP per logica backend e JavaScript con Bootstrap per un'interfaccia responsive",
+            "2": "Aggiornamento di un'applicazione React Native già esistente tramite implementazione di nuove funzionalità e aggiornamenti",
+            "3": "Sviluppo di interfaccia per gestione amministrativa con Laravel and Vuexy, che permette ad utenti admin to di caricare, gestire e rimuovere contenuto in maniera intuitiva",
+            "4": "Implementazione di funzionalità frontend per un'applicazione web centrata su agenti AI tramite uso di Laravel con Livewire e Volt",
+            "5": "Acquisita esperienza con Parallel Desk, Slack e ClickUp, collaborando efficacemente all'interno di un team"
+        },
+        "its": {
+            "1": "Acquisite solide basi in Python e sviluppo web, inclusi HTML, CSS, e JavaScript",
+            "2": "Sviluppata una comprensione pratica dell'architettura di applicazioni full-stack, coprendo frontend, backend, API e integrazione con database",
+            "3": "Acquisita esperienza pratica con framework come Django, React e Laravel",
+            "4": "Lavorato con strumenti di sviluppo e test, tra cui Postman, Git e Github",
+            "5": "Acquisite conoscenze di base su containerizzazione (Docker), concetti cloud e tecnologie Internet of Things (IoT)"
+        }
+    }
+}

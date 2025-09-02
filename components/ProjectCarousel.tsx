@@ -12,10 +12,11 @@ type Parameters = {
     title: string;
     folder: string;
     technologies: string[];
+    view_code: string;
 }
 const githubUsername = process.env.NEXT_PUBLIC_GITHUB_USERNAME;
 
-export default function ProjectCarousel({ images, folder, title, description, technologies }: Parameters) {
+export default function ProjectCarousel({ images, folder, title, description, technologies, view_code }: Parameters) {
     return (
         <div>
             <div className="text-2xl font-bold">{title}</div>
@@ -53,7 +54,7 @@ export default function ProjectCarousel({ images, folder, title, description, te
                 <CarouselNext />
             </Carousel>
 
-            <Badge className="bg-blue-500 text-white mt-3"><Link href={`https://github.com/${githubUsername}/${folder}`}> View Code</Link></Badge>
+            <Badge className="bg-blue-500 text-white mt-3"><Link href={`https://github.com/${githubUsername}/${folder}`}>{view_code}</Link></Badge>
         </div>
 
 
