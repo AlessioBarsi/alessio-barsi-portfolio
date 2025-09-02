@@ -3,6 +3,7 @@ import Link from "next/link";
 
 const githubUsername = process.env.NEXT_PUBLIC_GITHUB_USERNAME;
 const linkedinUsername = process.env.NEXT_PUBLIC_LINKEDIN_USERNAME;
+const emailAddress = process.env.NEXT_PUBLIC_EMAIL_ADDRESS;
 
 export default function Contacts() {
   return (
@@ -13,7 +14,7 @@ export default function Contacts() {
       <Link className="text-blue-500 hover:underline" href={`https://www.linkedin.com/in/${linkedinUsername}`}>
         <Linkedin size={32} />
       </Link>
-      <Link className="text-blue-500 hover:underline" href="#">
+      <Link className="text-blue-500 hover:underline" href={`mailto:${emailAddress}`}>
         <Mail size={32} />
       </Link>
     </div>

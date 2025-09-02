@@ -3,6 +3,7 @@ import { Badge } from "./ui/badge";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "./ui/carousel";
 import Autoplay from "embla-carousel-autoplay"
 import Link from "next/link";
+import Image from "next/image";
 
 
 type Parameters = {
@@ -36,10 +37,14 @@ export default function ProjectCarousel({ images, folder, title, description, te
                     {images.map(element => {
                         return (
                             <CarouselItem key={element}>
-                                <img className="border rounded-lg w-[70%]" 
-                                src={`/projects/${folder}/${element}`} 
-                                alt={element} 
-                                />
+
+                                <div className="relative w-[70%] h-[500px]">
+                                    <Image className="object-cover border rounded-lg w-[70%]" src={`/projects/${folder}/${element}`}
+                                        fill
+                                        alt="Image could not be loaded"
+                                    />
+                                </div>
+
                             </CarouselItem>
                         );
                     })}
