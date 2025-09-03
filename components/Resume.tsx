@@ -18,7 +18,7 @@ export default function Resume({ t }: ResumeProps) {
                     <ul className="list-disc pl-6">
                         {Object.entries(t.resume.pizero).map(([key, value]) => (
                             <li key={key}>
-                                <b>{key}:</b> {value}
+                               {value}
                             </li>
                         ))}
                     </ul>
@@ -27,7 +27,7 @@ export default function Resume({ t }: ResumeProps) {
                     <ul className="list-disc pl-6">
                         {Object.entries(t.resume.its).map(([key, value]) => (
                             <li key={key}>
-                                <b>{key}:</b> {value}
+                                {value}
                             </li>
                         ))}
                     </ul>
