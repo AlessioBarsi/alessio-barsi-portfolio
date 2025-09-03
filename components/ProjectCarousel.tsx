@@ -39,8 +39,8 @@ export default function ProjectCarousel({ images, folder, title, description, te
                         return (
                             <CarouselItem key={element}>
 
-                                <div className="relative w-[70%] h-[500px]">
-                                    <Image className="object-cover border rounded-lg w-[70%]" src={`/projects/${folder}/${element}`}
+                                <div className="relative w-full h-[200px] md:h-[500px] md:w-[75%]">
+                                    <Image className="object-cover border rounded-lg" src={`/projects/${folder}/${element}`}
                                         fill
                                         alt="Image could not be loaded"
                                     />
