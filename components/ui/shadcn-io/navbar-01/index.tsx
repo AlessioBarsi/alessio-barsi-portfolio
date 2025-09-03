@@ -6,6 +6,10 @@ import {
   NavigationMenu, NavigationMenuList
 } from '../../navigation-menu';
 import Contacts from '@/components/Contacts';
+import ReactCountryFlag from "react-country-flag";
+import LanguageSwitch from '@/components/LanguageSwitch';
+import { ChevronDown } from 'lucide-react';
+
 // Utility to concatenate class names
 function cn(...classes: (string | undefined | null | false)[]) {
   return classes.filter(Boolean).join(' ');
@@ -20,6 +24,7 @@ export interface Navbar01NavLink {
 
 export interface Navbar01Props extends React.HTMLAttributes<HTMLElement> {
   navigationLinks?: Navbar01NavLink[];
+  lang: string;
 }
 
 // Default navigation links
@@ -35,6 +40,7 @@ export const Navbar01 = React.forwardRef<HTMLElement, Navbar01Props>(
     {
       className,
       navigationLinks = defaultNavigationLinks,
+      lang,
       ...props
     },
     ref
@@ -86,7 +92,11 @@ export const Navbar01 = React.forwardRef<HTMLElement, Navbar01Props>(
           <div className="flex items-center gap-2">
             {/* Mobile menu trigger */}
             {isMobile && (
-              <div className="text-3xl font-bold">ALESSIO BARSI</div>
+              <div className='flex items-center gap-2'>
+
+                <div className="text-3xl font-bold flex-1 pr-2 whitespace-nowrap">ALESSIO BARSI </div>
+                <LanguageSwitch lang={lang} />
+              </div>
             )}
             {/* Main nav */}
             <div className="flex items-center gap-6">
@@ -97,18 +107,20 @@ export const Navbar01 = React.forwardRef<HTMLElement, Navbar01Props>(
                 <div className="text-2xl">
                 </div>
                 <span className="hidden font-bold text-5xl sm:inline-block">ALESSIO BARSI</span>
+
               </button>
             </div>
           </div>
           {/* Right side */}
           <div className="flex items-center gap-3">
-              {!isMobile && (
-                <NavigationMenu className="flex">
-                  <NavigationMenuList className="gap-1">
-                    <Contacts />
-                  </NavigationMenuList>
-                </NavigationMenu>
-              )}
+            {!isMobile && (
+              <NavigationMenu className="flex">
+                <NavigationMenuList className="gap-1">
+                  <LanguageSwitch lang={lang} />
+                  <Contacts />
+                </NavigationMenuList>
+              </NavigationMenu>
+            )}
           </div>
         </div>
       </header>

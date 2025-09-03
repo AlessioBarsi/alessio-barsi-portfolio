@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <div>
       <div className="relative w-full">
-        <Navbar01 />
+        <Navbar01 lang="it"/>
       </div>
 
       <div className="mx-5 my-5 flex flex-col md:flex-row items-start space-x-0 md:space-x-5 space-y-5 md:space-y-0">
